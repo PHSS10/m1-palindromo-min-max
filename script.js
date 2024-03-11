@@ -1,7 +1,16 @@
 function isPalindrome(str){
-    /* Seu código aqui */
-}
+    let ultimaString = str.toLowerCase().length -1;
+    let result = ""
+    
+    for(let i = ultimaString; i >= 0; i--){
 
-function arrayMaxMin(arr){
-    /* Seu código aqui */
+        result= str[i] + result ;
+        console.log(result);
+    }
+    if(result == str){
+        return true
+    } 
+    
+    return false
 }
+console.log(isPalindrome("Anilina"))
